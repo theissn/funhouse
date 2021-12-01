@@ -1,0 +1,15 @@
+awscli
+bash
+composer
+git
+go
+libtermkey
+luajit-openresty
+luv
+msgpack
+tmux
+tree-sitter
+vim
+yarn
+z
+zsh
