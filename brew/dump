@@ -1,4 +1,4 @@
 #!/bin/bash
 
-brew list --cask > casks
 brew leaves > leaves
+brew list --cask > casks
