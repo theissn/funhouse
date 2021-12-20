@@ -1,1 +1,2 @@
-# dotfiles aka funhouse
+# dotfiles
+

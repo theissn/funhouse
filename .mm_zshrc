@@ -1,0 +1,5 @@
+alias mm="php -d display_errors=off /Users/tay/work/mm/feature-environments/mm"
+
+function mssh() {
+    ssh -i ~/.ssh/aws_rsa ubuntu@$1
+}
