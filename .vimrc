@@ -11,3 +11,6 @@ set backspace=2
 
 highlight Comment ctermfg=green
 
+call plug#begin('~/.vim/plugged')
+Plug 'kien/ctrlp.vim'
+call plug#end()

@@ -1,7 +1,6 @@
 autoload -Uz compinit && compinit
 bindkey '^R' history-incremental-search-backward
 
-[ -f $(which nvim) ] && alias vim="nvim"
 alias g="git"
 alias d="docker"
 alias dc="docker-compose"
@@ -20,7 +19,15 @@ gplog() {
 
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-[ -f $(which brew) ] && . $(brew --prefix)/etc/profile.d/z.sh
+[ -x "$(command -v brew)" ] && . $(brew --prefix)/etc/profile.d/z.sh
+[ -x "$(command -v nvim)" ] && alias vim="nvim"
 
 export EDITOR='vim'
 export NVM_DIR="$HOME/.nvm"
+
+setopt PROMPT_SUBST
+PROMPT='%n@%m: ${(%):-%~} '
+
+HISTFILE=~/.zsh_history
+HISTSIZE=5000
+SAVEHIST=$HISTSIZE
