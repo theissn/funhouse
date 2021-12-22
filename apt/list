@@ -1,0 +1,16 @@
+containerd.io
+curl
+docker-ce
+docker-ce-cli
+docker-compose
+git
+google-chrome-stable
+mycli
+mysql-client
+tlp
+tlp-rdw
+tmux
+torguard
+usb-creator-gtk
+vim
+zsh
